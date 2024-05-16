@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {},
 	},
-	plugins: [require('@tailwindcss/line-clamp')]
+	plugins: []
 }
 
 //importar tailwind en el archivo astro y que tipo de archivos puede usar
