@@ -1,15 +1,11 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind"; //importar tailwind
 import mdx from "@astrojs/mdx";
+import react from "@astrojs/react";
+import vue from "@astrojs/vue";
+import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
- 	integrations: [tailwind(), mdx()] //integrar tailwind
-// 	content: {
-// 		collections: {
-// 			tips: 'src/content/tips'
-// 		},
-// 	},
- });
-
- 
+  integrations: [tailwind(), mdx(), react(), vue(), svelte()] //integrar tailwind
+});
